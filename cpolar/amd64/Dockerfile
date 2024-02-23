@@ -1,9 +1,7 @@
-FROM arm64v8/alpine:3.18 as builder
+FROM amd64/alpine:3.18 as builder
 
 ENV RELEASE_VERSION=3.3.12
-
-ENV MACHINE=arm64
-
+ENV MACHINE=amd64
 ENV TMP_DIRECTORY=/tmp/cpolar
 
 RUN mkdir -p $TMP_DIRECTORY && apk add --no-cache curl unzip
@@ -15,7 +13,7 @@ RUN curl -R -H 'Cache-Control: no-cache' -o "$TMP_DIRECTORY/cpolar-stable-linux-
 RUN unzip -q "$TMP_DIRECTORY/cpolar-stable-linux-$MACHINE.zip" -d $TMP_DIRECTORY
 
 # image
-FROM arm64v8/alpine:3.18
+FROM amd64/alpine:3.18
 
 LABEL maintainer="Shaw-W <shaw.wei@qq.com>"
 

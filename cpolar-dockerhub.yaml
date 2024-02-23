@@ -1,6 +1,20 @@
 image: razerx/cpolar:latest
 tags: ["latest","3.3.12"]
 manifests:
+  - image: razerx/cpolar:amd64-latest
+    platform:
+      architecture: amd64
+      os: linux
+  - image: razerx/cpolar:arm32v6-latest
+    platform:
+      architecture: arm
+      os: linux
+      variant: v6
+  - image: razerx/cpolar:arm32v7-latest
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
   - image: razerx/cpolar:arm64v8-latest
     platform:
       architecture: arm64

@@ -1,5 +1,5 @@
 #!/bin/bash
 # https://github.com/estesp/manifest-tool
 
-# frpc
+# cpolar
 manifest-tool push from-spec cpolar.yaml
