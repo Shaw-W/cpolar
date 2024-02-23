@@ -14,7 +14,7 @@ Docker Image packaging for cpolar.
 
     ```bash
     docker run -d --name cpolar \
-        -v /docker/config/cpolar:/cpolar/data \
+        -v /docker/config/cpolar:/cpolar \
         --restart always \
         --network host \
         razerx/cpolar
@@ -30,7 +30,7 @@ Docker Image packaging for cpolar.
         container_name: cpolar
         image: razerx/cpolar
         volumes:
-        - /docker/config/cpolar:/cpolar/data
+        - /docker/config/cpolar:/cpolar
         restart: always
         network_mode: host
     ```
