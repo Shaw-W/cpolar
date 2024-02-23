@@ -1,5 +1,5 @@
 image: ghcr.io/shaw-w/cpolar:latest
-tags: ["latest","3.3.12"]
+tags: ["latest","3.3.18"]
 manifests:
   - image: ghcr.io/shaw-w/cpolar:amd64-latest
     platform:

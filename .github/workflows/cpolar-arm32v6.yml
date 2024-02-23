@@ -41,6 +41,6 @@ jobs:
                 push: true
                 tags: |
                     razerx/cpolar:arm32v6-latest
-                    razerx/cpolar:arm32v6-3.3.12
+                    razerx/cpolar:arm32v6-3.3.18
                     ghcr.io/shaw-w/cpolar:arm32v6-latest
-                    ghcr.io/shaw-w/cpolar:arm32v6-3.3.12
+                    ghcr.io/shaw-w/cpolar:arm32v6-3.3.18
