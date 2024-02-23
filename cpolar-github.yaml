@@ -1,7 +1,7 @@
-image: ghcr.io/Shaw-W/cpolar:latest
+image: ghcr.io/shaw-w/cpolar:latest
 tags: ["latest","3.3.12"]
 manifests:
-  - image: ghcr.io/Shaw-W/cpolar:arm64v8-latest
+  - image: ghcr.io/shaw-w/cpolar:arm64v8-latest
     platform:
       architecture: arm64
       os: linux
