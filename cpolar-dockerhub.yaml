@@ -1,0 +1,8 @@
+image: razerx/cpolar:latest
+tags: ["latest","3.3.12"]
+manifests:
+  - image: razerx/cpolar:arm64v8-latest
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
