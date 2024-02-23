@@ -15,9 +15,9 @@ RUN unzip -q "$TMP_DIRECTORY/cpolar-stable-linux-$MACHINE.zip" -d $TMP_DIRECTORY
 # image
 FROM amd64/alpine:3.18
 
-RUN apk add --no-cache tini && mkdir /cpolar && mkdir /app
+RUN mkdir /cpolar && mkdir /app
 
 COPY --from=builder /tmp/cpolar/cpolar /app/cpolar
 COPY --from=builder /tmp/cpolar/cpolar.yml /cpolar/cpolar.yml
 
-ENTRYPOINT ["tini", "/app/cpolar", "start-all", "-dashboard=on", "-daemon=on", "-config=/cpolar/cpolar.yml", "-log=stdout"]
+ENTRYPOINT ["/app/cpolar", "start-all", "-dashboard=on", "-daemon=on", "-config=/cpolar/cpolar.yml", "-log=stdout"]
