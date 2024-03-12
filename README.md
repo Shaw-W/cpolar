@@ -2,9 +2,7 @@
 
 [![cpolar](http://dockeri.co/image/razerx/cpolar)](https://hub.docker.com/r/razerx/cpolar)
 
-Docker Image packaging for cpolar.
-
-(amd64, arm32v6, arm32v7, arm64v8)
+Docker Image packaging for cpolar. (amd64, arm32v6, arm32v7, arm64v8)
 
 ### > [官网](https://www.cpolar.com) | [官方文档](https://www.cpolar.com/docs) <
 
